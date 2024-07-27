@@ -1,0 +1,171 @@
+#include "geesespotter_lib.h"
+#include <iostream>
+
+char *create_board(std::size_t x_dim, std::size_t y_dim)
+{
+    char *new_board= new char[x_dim * y_dim];
+
+    for(std::size_t i=0; i<x_dim*y_dim; i++)
+    {
+        new_board[i]=0;
+    }
+
+    return new_board;
+}
+
+void clean_board(char *board) 
+{
+    delete[] board;
+}
+
+void print_board(char *board, std::size_t x_dim, std::size_t y_dim) 
+{
+     std::size_t one_d_number = x_dim * y_dim;
+
+    for ( std::size_t i=0; i < one_d_number; i++ )
+    {
+       if ( board[i] & marked_mask())
+        {
+            std::cout << "M";
+        }
+        else if ( board[i] & hidden_mask())
+        { 
+            std::cout << "*";
+        }
+        else
+        {
+            std::cout <<(board[i] & value_mask());
+        } 
+        if(i % x_dim == x_dim -1)
+        {
+            std::cout << std::endl;
+        }
+    }
+}
+
+void hide_board(char *board, std::size_t x_dim, std::size_t y_dim) 
+{
+    for ( std::size_t i=0; i < x_dim * y_dim; i++ )
+    {
+       board[i]=board[i]| hidden_mask();
+    }
+}
+
+int mark(char *board, std::size_t x_dim, std::size_t y_dim, std::size_t x_loc,
+std::size_t y_loc) 
+{   
+    int field = y_loc * x_dim + x_loc;
+
+        if(board[field] & hidden_mask())
+        {
+            board[field] = board[field] ^ marked_mask();
+
+            return 0;
+        }
+        else if( board[field] & marked_mask())
+        {
+            board[field] = board[field] ^ hidden_mask();
+
+            return 0;
+        }
+        else
+        {
+            return 2;
+        }
+}
+
+void compute_neighbours(char *board, std::size_t x_dim, std::size_t y_dim) 
+{
+    int goose_count;
+
+    for(std::size_t i=0; i<y_dim; i++)
+    {
+        for(std::size_t j=0; j<x_dim; j++)
+        {
+            int field = i * x_dim + j;
+
+            if (board[field]!=9)
+            {
+                goose_count = 0;
+
+                for(int a=-1; a<=1; a++)
+                {
+                    for(int b=-1; b<=1; b++)
+                    {
+                        int new_y = i + b;
+                        int new_x = j + a;
+
+                        if (board[new_y * x_dim + new_x]==9 && new_x<x_dim && new_y<y_dim && new_x>=0 && new_y>=0)
+                        {
+                            goose_count ++;
+                        }
+                    }
+                } 
+                board[field]=goose_count;
+            }
+        }
+    }
+}
+
+bool is_game_won(char *board, std::size_t x_dim, std::size_t y_dim) 
+{
+    for(std::size_t i=0; i<y_dim; i++)
+    {
+        for(std::size_t j=0; j<x_dim; j++)
+        {
+            std::size_t index = i * x_dim + j;
+
+            if((board[index] & hidden_mask()) && ((board[index] & value_mask())!= 9))
+            {
+                return false;
+            }
+        } 
+    }
+    return true;
+}
+
+int reveal(char *board, std::size_t x_dim, std::size_t y_dim, std::size_t x_loc, std::size_t y_loc)
+{   
+            std::size_t index= y_loc * x_dim + x_loc;
+            
+            if (board[index] & marked_mask())
+            {
+                return 1;
+            }
+            if (!(board[index] & hidden_mask()))
+            {
+                return 2;
+            }
+
+            board[index] = board[index] & value_mask();
+
+            if (board[index] == 9)
+            {
+                return 9;
+            }
+            if (board[index]==0)
+            {   
+                int o_x;
+                int o_y;
+                int neighbor_value;
+
+                for(int a=-1; a<=1; a++)
+                {
+                        for(int b=-1; b<=1; b++)
+                        {
+                                    o_x = x_loc + a;
+                                    o_y = y_loc + b;
+                            if(o_x >= 0 && o_x < x_dim && o_y >= 0 && o_y < y_dim)
+                            {
+                                neighbor_value = o_y * x_dim + o_x;
+
+                                if((board[neighbor_value] & hidden_mask()) && !((board[neighbor_value] & marked_mask())))
+                                {
+                                    board[neighbor_value] = board[neighbor_value] & ~hidden_mask();
+                                }
+                            }
+                        }
+                }
+            }
+    return 0;
+}
