@@ -19,8 +19,6 @@ I’m a 2nd-year Electrical Engineering student @ **University of Waterloo**. I 
 
 
 
----
-
 ### 🔖 Featured Projects
 - **Gas Sensor Characterization GUI** – Real-time plots, DAQ control, I2C sensor integration.  
 - **Smart Sprout** – Arduino-based auto watering with relay control and moisture sensing.  
