@@ -1,5 +1,5 @@
 <!-- Header -->
-<h1 align="left">👋 Hello, I'm Luna</h1>
+<h1 align="left">Hello, I'm Luna 🌕⚡️</h1>
 
 I’m a 2nd-year Electrical Engineering student @ **University of Waterloo**. I like embedded systems, PCB design (Altium), and sensor/DAQ projects (LabJack, I2C). Currently building a NiceGUI-based gas sensor characterization app. I am also interested in the design of User Interface for website!
 
