@@ -13,7 +13,7 @@ I’m a 2nd-year Electrical Engineering student @ **University of Waterloo**. I 
 ---
 
 ### 🧰 Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=c,cpp,python,javascript,html,css,git,github,figma,altium design,arduino,matlab,linux,photoshop&perline=10)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=c,cpp,python,javascript,html,css,git,github,figma,arduino,matlab,linux,photoshop&perline=10)](https://skillicons.dev)
 
 ---
 
