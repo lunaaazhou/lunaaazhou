@@ -24,9 +24,9 @@ I’m a 2nd-year Electrical Engineering student @ **University of Waterloo**. I 
 - **Smart Sprout** – Arduino-based auto watering with relay control and moisture sensing.  
 - **BEC PCB** – DC-DC power module schematic & component selection in Altium.
 
-> Pin your best repos: go to each repo → **Pin** from your profile or **Customize your pins** on the profile page.
 
 ---
 
 ### 📬 Contact
-Open to co-op and research roles in embedded/controls/automation.
+📱: +1 548-577-8888
+📮: d24zhou@uwaterloo.ca
