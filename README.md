@@ -1,12 +1,37 @@
-### 👋 Hey, I'm Luna!
+<!-- Header -->
+<h1 align="left">👋 Hey, I'm Luna</h1>
 
-I’m a 2nd-year Electrical Engineering student at the University of Waterloo with interests in embedded systems, PCB design, and user interfaces.
+I’m a 2nd-year Electrical Engineering student @ **University of Waterloo**. I like embedded systems, PCB design (Altium), and sensor/DAQ projects (LabJack, I2C). Currently building a NiceGUI-based gas sensor characterization app.
 
-**Socials**
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lunazhou1220/)
-[![Website](https://img.shields.io/badge/Website-000?logo=vercel&logoColor=white)](https://playful-halva-bcf21e.netlify.app/)
+---
+
+### 🌐 Socials
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/<your-handle>/)
+[![Website](https://img.shields.io/badge/Website-000?logo=vercel&logoColor=white)](https://<your-site>/)
 [![Email](https://img.shields.io/badge/Email-d24zhou%40uwaterloo.ca-red)](mailto:d24zhou@uwaterloo.ca)
+
+---
 
 ### 🧰 Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=c,cpp,python,typescript,javascript,react,nextjs,nodejs,vercel,html,css,tailwind,bootstrap,git,github,figma,altium,arduino,mysql,postgres,matlab&perline=10)](https://skillicons.dev)
 
+---
+
+### 📊 GitHub Stats
+![Luna's GitHub stats](https://github-readme-stats.vercel.app/api?username=<your-username>&show_icons=true)
+![GitHub Streak](https://streak-stats.demolab.com?user=<your-username>)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=<your-username>&layout=compact)
+
+---
+
+### 🔖 Featured Projects
+- **Gas Sensor Characterization GUI** – Real-time plots, DAQ control, I2C sensor integration.  
+- **Smart Sprout** – Arduino-based auto watering with relay control and moisture sensing.  
+- **BEC PCB** – DC-DC power module schematic & component selection in Altium.
+
+> Pin your best repos: go to each repo → **Pin** from your profile or **Customize your pins** on the profile page.
+
+---
+
+### 📬 Contact
+Open to co-op and research roles in embedded/controls/automation.
