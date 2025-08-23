@@ -6,7 +6,7 @@ I’m a 2nd-year Electrical Engineering student @ **University of Waterloo**. I 
 ---
 
 ### 🌐 Socials
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/<your-handle>/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/<your-handle>/](https://www.linkedin.com/in/lunazhou1220/))
 [![Website](https://img.shields.io/badge/Website-000?logo=vercel&logoColor=white)](https://<your-site>/)
 [![Email](https://img.shields.io/badge/Email-d24zhou%40uwaterloo.ca-red)](mailto:d24zhou@uwaterloo.ca)
 
