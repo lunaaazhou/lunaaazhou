@@ -17,10 +17,7 @@ I’m a 2nd-year Electrical Engineering student @ **University of Waterloo**. I 
 
 ---
 
-### 📊 GitHub Stats
-![Luna's GitHub stats](https://github-readme-stats.vercel.app/api?username=<your-username>&show_icons=true)
-![GitHub Streak](https://streak-stats.demolab.com?user=<your-username>)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=<your-username>&layout=compact)
+
 
 ---
 
